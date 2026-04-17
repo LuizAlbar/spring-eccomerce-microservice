@@ -33,7 +33,6 @@ public class UserController {
         userService.addUser(user);
         return ResponseEntity.ok("User added successfully");
     }
-
     @PutMapping("/{id}")
     public ResponseEntity<String> updateUser(@PathVariable Long id, @RequestBody User updatedUser) {
 
