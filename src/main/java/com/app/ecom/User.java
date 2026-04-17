@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 //@AllArgsConstructor
-//@Entity(name = "user_table")
-@Entity
+@Entity(name = "user_table")
+//@Entity
 public class User {
 
     @Id
@@ -20,4 +20,7 @@ public class User {
     private Long id;
     private String firstName;
     private String lastName;
+    private String email;
+    private String phone;
+    private UserRole role = UserRole.CUSTOMER;
 }
